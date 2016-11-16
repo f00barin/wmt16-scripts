@@ -12,7 +12,7 @@
 # especially if they differ in their alphabet
 
 # suffix of source language files
-SRC=ro
+SRC=de
 
 # suffix of target language files
 TRG=en
@@ -35,8 +35,8 @@ for prefix in corpus newsdev2016
  do
    cat data/$prefix.$SRC | \
    $mosesdecoder/scripts/tokenizer/normalize-punctuation.perl -l $SRC | \
-   ../preprocess/normalise-romanian.py | \
-   ../preprocess/remove-diacritics.py | \
+#   ../preprocess/normalise-romanian.py | \
+#   ../preprocess/remove-diacritics.py | \
    $mosesdecoder/scripts/tokenizer/tokenizer.perl -a -l $SRC > data/$prefix.tok.$SRC
 
    cat data/$prefix.$TRG | \
