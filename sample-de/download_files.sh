@@ -19,7 +19,7 @@ tar -xf de-en.tgz
 #cat europarl-v7.de-en.en SETIMES2.en-de.en > corpus.en
 #cat europarl-v7.de-en.de SETIMES2.en-de.de > corpus.de
 
-#cat europarl-v7.de-en.en > corpus.en
-#cat europarl-v7.de-en.de > corpus.de
+cat europarl-v7.de-en.en > corpus.en
+cat europarl-v7.de-en.de > corpus.de
 
 cd ..
