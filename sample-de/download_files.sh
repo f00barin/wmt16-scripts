@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # get En-Ro training data for WMT16
-
+mkdir model data 
 if [ ! -f data/de-en.tgz ];
 then
   wget http://www.statmt.org/europarl/v7/de-en.tgz -O data/de-en.tgz
